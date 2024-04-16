@@ -1,0 +1,247 @@
+body{
+    background-image: url("img/cont.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+header{
+    opacity: 20;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    text-shadow: black 0px 8px 4px ;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color:white;
+    display: flex;
+}
+li{
+    color:white;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+li:first-child{
+    margin-left: 0px;
+}
+
+button{
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff0000;
+    font-weight: 900;
+    position: fixed;
+}
+a.signup{
+    color: #ffffff;
+}
+a.signup:hover{
+    color: white;  
+    background-color: #ff0000;
+    animation: glow 1s 1 forwards;  
+}
+@media (max-width: 630px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+    
+    li {
+        margin: 5px; 
+        font-size: 14px;
+    }
+    h1{
+        margin-top: 100px;
+     }
+
+    button {
+        top: 5px; 
+        right: 5px;
+        padding: 8px 20px; 
+        font-size: 14px; 
+    }
+}
+a{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Contact{
+    color: red;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -9px;
+    font-size: 25px;
+}
+a.Home:hover{
+    animation: font-size 0.5s 1 forwards;
+}
+a.Home:not(:hover) {
+    animation: revert-font-size 0.5s  forwards;
+}
+a.Location:hover{
+    animation: font-size 0.5s 1 forwards;
+}
+a.Location:not(:hover) {
+    animation: revert-font-size 0.5s 1 forwards;
+}
+
+
+@keyframes font-size {
+    0%{
+        display: flex;
+        margin-top: 0px;
+    }
+    100%{
+        display: flex;
+        margin-top: -9px;
+        font-size: 25px;
+    }
+    
+}
+
+@keyframes revert-font-size {
+    0% {
+        display: flex;
+        margin-top: -9px;
+        font-size: 25px;
+    }
+    100% {
+        display: flex;
+        margin-top: 0px;
+    }
+}
+section{
+    background: rgb(245, 245, 245,0.5);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div{
+    display: inline-block;
+    margin: auto;
+    width: 150px ;
+    height: 150PX;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+footer{
+    background: rgb(0, 0, 0,0.7);
+    display: grid;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+@keyframes glow {
+    0% {
+        border-radius: 50%;
+      box-shadow: 0 0px 30px 10px #ff0000;
+
+    }
+    50% {
+        border-radius: 50%;
+      box-shadow: 0 0px 80px 30px  #ff0000;
+    }
+    100% {
+        border-radius: 50%;
+      box-shadow: 0 0px 30px 20px #ff0000;
+
+    }
+}
+
+img.marwen{
+    margin-top: -15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 40%;
+    border-style: inset;
+    border-color: rgb(14, 0, 145);
+}
+img.contactimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+p{
+    margin: auto;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: -20px;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  #facebook-icon:before {
+    content: "\f09a"; /* Facebook icon Unicode character */
+    
+
+  }
+
+  #instagram-icon:before {
+    content: "\f16d"; /* Instagram icon Unicode character */
+  }
+
+  #linkedin-icon:before {
+    content: "\f08c"; /* LinkedIn icon Unicode character */
+  }
+  img.facebook-icon{
+    margin-bottom: -20%;
+    
+    width: 30px;
+    height: 30px;
+    
+}
+img.instagram-icon{
+    margin-bottom: -20%;
+    
+    width: 30px;
+    height: 30px;
+    
+} 
+img.linkedin-icon{
+    margin-bottom: -20%;
+    width: 30px;
+    height: 30px;
+    
+} 
